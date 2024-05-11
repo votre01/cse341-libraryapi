@@ -1,0 +1,36 @@
+### Get all contacts
+GET http://localhost:3000/contacts
+
+### Get contact by id
+GET http://localhost:3000/contacts/650c5812c06bc031e32200a1
+
+### Create contact
+POST http://localhost:3000/contacts HTTP/1.1
+content-type: application/json
+
+{  
+  "firstName": "amanda",
+  "lastName": "bryce",
+  "email": "abryce@email.edu",
+  "phone": "00012345",
+  "institution": "byui",
+  "major": "applied technology",
+  "birthDate": "1997-09-14"
+}
+
+### Update contact
+PUT http://localhost:3000/contacts/6636b94dac2fea6a7157cedb HTTP/1.1
+content-type: application/json
+
+{
+  "firstName": "amanda",
+  "lastName": "bryce",
+  "email": "abryce@email.edu",
+  "phone": "000123678",
+  "institution": "byui",
+  "major": "applied technology",
+  "birthDate": "1997-09-14"
+}
+
+### Delete contact
+DELETE http://localhost:3000/contacts/6636b918e23dc5471d8d3bff
