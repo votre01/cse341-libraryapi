@@ -8,12 +8,12 @@ router.get('/', studentsController.getAllStudents);
 router.get('/:id', studentsController.getSingleStudent);
 
 // Register new student
-router.post('/', validation.saveStudent, studentsController.createContact);
+router.post('/', validation.saveStudent, studentsController.registerStudent);
 
 // Update student in database
-router.put('/:id', validation.saveStudent, studentsController.updateContact);
+router.put('/:id', validation.saveStudent, studentsController.updateStudent);
 
 // Delete student from database
-router.delete('/:id', studentsController.deleteContact);
+router.delete('/:id', studentsController.deleteStudent);
 
 module.exports = router;
