@@ -5,11 +5,10 @@
     "description": "Library Api",
     "version": "1.0.0"
   },
-  "host": "https://cse341-libraryapi.onrender.com",
+  "host": "cse341-libraryapi.onrender.com",
   "basePath": "/",
   "schemes": [
-    "https",
-    "http"
+    "https"
   ],
   "paths": {
     "/": {
