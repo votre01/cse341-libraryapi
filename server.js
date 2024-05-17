@@ -3,7 +3,9 @@ const mongodb = require('./data/database');
 const bodyParser = require('body-parser');
 const port = process.env.PORT || 3000;
 const passport = require('passport');
-const session = require('express-session');
+// const session = require('express-session');
+const session = require('cookie-session');
+
 const GitHubStrategy = require('passport-github2').Strategy;
 const cors = require('cors');
 require('dotenv').config();
